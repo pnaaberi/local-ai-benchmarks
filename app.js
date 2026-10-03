@@ -127,15 +127,17 @@ function render(data) {
   byId('result-content').hidden = false;
   byId('load-status').textContent = '9 mitattua ajoa · 3 tehtävää · yksi testattu GPU-profiili · toinen profiili estetty';
 }
-(async () => {
+const originalReceipt = (async () => {
   try {
     const response = await fetch('results.json', {cache: 'no-store'});
     if (!response.ok) throw new Error('Receipt request failed');
     const data = validate(await response.json());
     render(data);
+    return data;
   } catch {
     byId('result-content').hidden = true;
     byId('load-status').textContent = 'Mittauskuittien lataus tai tarkistus epäonnistui. Lataa JSON yllä olevasta linkistä tai lataa sivu uudelleen. Puuttuva tieto ei ole nolla.';
+    return null;
   }
 })();
 
@@ -248,13 +250,87 @@ async function loadExtra(file, validator, renderer, statusId, contentId) {
   try {
     const response = await fetch(file, {cache: 'no-store'});
     if (!response.ok) throw new Error('Data unavailable');
-    renderer(validator(await response.json()));
+    const data = validator(await response.json());
+    renderer(data);
     if (contentId) byId(contentId).hidden = false;
+    return data;
   } catch {
     if (contentId) byId(contentId).hidden = true;
     byId(statusId).textContent = 'Aineiston lataus tai tarkistus epäonnistui. Lataa JSON tai lataa sivu uudelleen. Puuttuva tieto ei ole nolla.';
   }
 }
-loadExtra('fits.json', validateFits, renderFits, 'fit-status', 'fit-content');
+const fitReceipt = loadExtra('fits.json', validateFits, renderFits, 'fit-status', 'fit-content');
 loadExtra('research.json', validateResearch, renderResearch, 'research-status', 'research-content');
 loadExtra('catalog.json', validateCatalog, renderCatalog, 'catalog-status');
+
+// Rankings use verified measured rows, never model names or catalog marketing.
+function measuredModels(original, fits) {
+  if (!original || !fits) throw new Error('Incomplete ranking receipts');
+  const models = [...fits.profiles, {
+    name: 'Qwen2.5-Coder 14B Q4_K_M', runs: original.runs,
+    resident_vram_bytes: original.models[0].resident_vram_bytes
+  }].map((model) => ({
+    ...model,
+    correct: model.runs.filter((run) => run.passed).length,
+    latency: median(model.runs.map((run) => run.elapsed_s)),
+    speed: median(model.runs.map(decodeRate))
+  }));
+  return models.sort((a, b) => b.correct - a.correct || a.latency - b.latency);
+}
+function taskScore(model, id) {
+  return model.runs.filter((run) => run.case_id === id && run.passed).length;
+}
+function appendTableRow(target, cells, classes = []) {
+  const row = element('tr');
+  cells.forEach((value, index) => {
+    const cell = element(index === 0 ? 'th' : 'td', value, classes[index]);
+    if (index === 0) cell.scope = 'row';
+    row.append(cell);
+  });
+  byId(target).append(row);
+}
+function renderRankings(models) {
+  const best = models[0];
+  const fastest = [...models].sort((a, b) => b.speed - a.speed)[0];
+  const smallest = [...models].sort((a, b) => a.resident_vram_bytes - b.resident_vram_bytes)[0];
+  byId('best-pick').append(element('strong', `Näiden kokeiden ykkösvalinta: ${best.name}. `),
+    element('span', `${best.correct}/9 oikein · ${format(best.latency)} s / vastaus · ${format(best.speed, 1)} tok/s. Nopein niistä malleista, jotka vastasivat kaikkiin yhdeksään pyyntöön oikein.`));
+  const categories = [
+    ['Paras valinta', best.name, `${best.correct}/9 · ${format(best.latency)} s`, 'Oikeellisuus ensin; mediaaniviive ratkaisee tasatuloksen. Ei yleinen laatuluokitus.'],
+    ['Nopein generointi', fastest.name, `${format(fastest.speed, 1)} tok/s · ${fastest.correct}/9 oikein`, 'Nopeus ei takaa oikeaa vastausta.'],
+    ['Pienin GPU-muisti', smallest.name, `${format(smallest.resident_vram_bytes / 2 ** 30)} GiB · ${smallest.correct}/9 oikein`, 'Mallin GPU-residenssi, ei kokonaiskulutus.']
+  ];
+  for (const [id, title] of Object.entries({'hardware-extraction': 'Poiminta EN', 'finnish-hardware-extraction': 'Poiminta FI', 'storage-aggregation': 'Tarkka levysumma'})) {
+    const high = Math.max(...models.map((model) => taskScore(model, id)));
+    const winners = models.filter((model) => taskScore(model, id) === high);
+    categories.push([title, winners.length === models.length ? 'Kaikki 4 mallia · tasatulos' : winners.map((model) => model.name).join(' + '),
+      `${high}/3 oikein`, winners.length > 1 ? 'Oikeellisuuden tasatulos. Katso mallikohtaiset tulokset alta.' : 'Paras vain tässä yksittäisessä tehtävässä.']);
+  }
+  categories.push(
+    ['Koodaus ja agenttityö', 'Ei vielä voittajaa', 'Ei mitattu', 'Coder-nimi ei ole näyttö koodin toimivuudesta.'],
+    ['Keskustelu ja RAG', 'Ei vielä voittajaa', 'Ei mitattu', 'Ei keskustelu- tai hakulaadun hyväksyntäkoetta.'],
+    ['Kuva ja ääni', 'Ei vielä voittajaa', 'Ei mitattu', 'Malliluettelon saatavuus ei ole paikallinen testitulos.'],
+    ['Clef-päätöksenteko', 'Ei vielä voittajaa', 'Ajo estetty', 'Päätöspäätä ei ole ajettu tällä koneella.']
+  );
+  for (const cells of categories) {
+    appendTableRow('category-rows', cells.slice(0, 3));
+    byId('category-notes').append(element('li', `${cells[0]}: ${cells[3]}`));
+  }
+  for (const model of models) {
+    appendTableRow('model-rows', [model.name,
+      model.correct === 9 ? 'Toimi · kaikki oikein' : 'Toimi · laskuvirheitä',
+      `${model.correct} / 9`, `${format(model.latency)} s`, format(model.speed, 1),
+      `${format(model.resident_vram_bytes / 2 ** 30)} GiB`], ['', model.correct === 9 ? 'pass' : 'fail', 'number', 'number', 'number', 'number']);
+    const scores = ['hardware-extraction', 'finnish-hardware-extraction', 'storage-aggregation'].map((id) => taskScore(model, id));
+    appendTableRow('task-matrix', [model.name, ...scores.map((score) => `${score} / 3`)],
+      ['', ...scores.map((score) => `number ${score === 3 ? 'pass' : 'fail'}`)]);
+  }
+  byId('ranking-status').textContent = '4 ajettua mallia · 36 pisteytettyä vastausta · 3 tehtävää · mittaukset 3.–4. lokakuuta 2026';
+  byId('ranking-content').hidden = false;
+}
+Promise.all([originalReceipt, fitReceipt]).then(([original, fits]) => {
+  renderRankings(measuredModels(original, fits));
+}).catch(() => {
+  byId('ranking-content').hidden = true;
+  byId('ranking-status').textContent = 'Kokonaisvertailua ei voida varmistaa: mittausaineisto puuttuu tai on virheellinen. Lataa sivu uudelleen tai tarkista JSON-kuitit alempaa. Voittajaa ei arvata puuttuvista tuloksista.';
+});

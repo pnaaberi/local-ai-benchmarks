@@ -47,6 +47,8 @@
   --focus-width: 3px;
   --focus-offset: 3px;
   --table-min: 48rem;
+  --category-table-min: 21rem;
+  --model-name-min: 12rem;
   --metric-min: 12rem;
   --bar-height: .375rem;
   --skip-layer: 1;
