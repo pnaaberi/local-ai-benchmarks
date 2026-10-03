@@ -1,0 +1,30 @@
+{
+  "schema": "public-hardware-profile.v1",
+  "machine_alias": "RDNA4-16",
+  "observed_date": "2026-10-03",
+  "observed": {
+    "cpu": "AMD Ryzen 7 5800X",
+    "cores": 8,
+    "threads": 16,
+    "os_usable_ram_bytes": 16667045888,
+    "gpu_pci_family": "AMD Navi 48",
+    "gpu_subsystem_vendor": "Sapphire",
+    "gpu_reported_vram_bytes": 17095983104,
+    "motherboard": "ASUS TUF GAMING B550-PLUS",
+    "bios": "American Megatrends Inc. 3636",
+    "disks": [
+      {"model": "Samsung SSD 990 PRO 2TB", "bytes": 2000398934016, "interface": "NVMe"},
+      {"model": "Samsung SSD 860 EVO 1TB", "bytes": 1000204886016, "interface": "SATA"}
+    ],
+    "ethernet": "Realtek RTL8125 2.5GbE",
+    "wifi": "MediaTek MT7921",
+    "kernel": "6.18.52-1-cachyos-lts",
+    "gpu_kernel_driver": "amdgpu",
+    "ollama": "0.20.0",
+    "installed_packages": {"hip-runtime-amd": "7.2.4-1.1", "rocm-core": "7.2.4-1.1", "mesa": "26.2.4-1"}
+  },
+  "owner_identified": {"gpu_retail_family": "AMD Radeon RX 9070 XT 16 GB", "installed_ram_class_gb": 16},
+  "unknown": ["PSU", "case", "cooler", "DIMM count and speed", "negotiated PCIe link", "exact GPU retail variant", "Ollama runner backend library version"],
+  "collection_methods": ["lscpu", "free", "lspci", "lsblk JSON without serial fields", "DMI board_name/board_vendor/bios_version", "amdgpu sysfs", "pacman selected package query"],
+  "privacy": "No real computer name, serials, MACs, IPs, owner identity or private filesystem paths. Hardware details only."
+}

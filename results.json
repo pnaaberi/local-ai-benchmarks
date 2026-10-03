@@ -1,0 +1,266 @@
+{
+  "schema": "local-inference-observation.v1",
+  "machine_alias": "RDNA4-16",
+  "started_at": "2026-10-03T15:00:42.074546+00:00",
+  "runtime": {
+    "name": "Ollama",
+    "version": "0.20.0",
+    "executable_sha256": "c67fa9afe28c8312a03e6952337088127a14853f09961aff3a0b0c688aab016b"
+  },
+  "kernel": "6.18.52-1-cachyos-lts",
+  "vram_total_bytes": 17095983104,
+  "options": {
+    "num_ctx": 4096,
+    "num_predict": 128,
+    "temperature": 0,
+    "seed": 42
+  },
+  "concurrency": 1,
+  "repeats_per_case": 3,
+  "cases": [
+    {
+      "id": "hardware-extraction",
+      "task": "Convert measured hardware facts into JSON",
+      "prompt": "Extract only these measured facts: CPU AMD Ryzen 7 5800X, 8 cores, 16 threads. Installed RAM 16 GB. GPU VRAM 16 GB. Return exactly JSON keys cores, threads, ram_gb, vram_gb with numeric values. No explanation.",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ram_gb": 16,
+        "vram_gb": 16
+      }
+    },
+    {
+      "id": "storage-aggregation",
+      "task": "Aggregate actual installed storage capacities",
+      "prompt": "Installed disks: Samsung SSD 990 PRO 2TB, capacity 2000398934016 bytes; Samsung SSD 860 EVO 1TB, capacity 1000204886016 bytes. Ignore virtual RAM disks. Return JSON with disk_count and total_bytes. Calculate the exact total; no explanation.",
+      "expected": {
+        "disk_count": 2,
+        "total_bytes": 3000603820032
+      }
+    },
+    {
+      "id": "finnish-hardware-extraction",
+      "task": "Extract actual hardware facts from Finnish text",
+      "prompt": "Poimi tiedot JSON-muodossa. Koneessa on Ryzen 7 5800X: 8 ydint\u00e4 ja 16 s\u00e4iett\u00e4. Emolevy on ASUS TUF GAMING B550-PLUS. Verkkokortti on Realtek RTL8125, 2.5 GbE. Vastaa vain avaimilla cores, threads, ethernet_gbps; arvot numeroina.",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ethernet_gbps": 2.5
+      }
+    }
+  ],
+  "models": [
+    {
+      "name": "qwen2.5-coder:14b",
+      "manifest_digest": "9ec8897f747e246e970bc5cfdda85d22f1123dc2e3d34978a010a75968716849",
+      "artifact_size_bytes": 8988124298,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      },
+      "resident_size_bytes": 9714411520,
+      "resident_vram_bytes": 9714411520,
+      "warmup_elapsed_s": 9.886,
+      "warmup_load_duration_ns": 9285977650
+    }
+  ],
+  "runs": [
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "hardware-extraction",
+      "repeat": 1,
+      "elapsed_s": 1.819555,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ram_gb": 16,
+        "vram_gb": 16
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1816838068,
+      "load_duration": 189243778,
+      "prompt_eval_count": 92,
+      "prompt_eval_duration": 126946509,
+      "eval_count": 37,
+      "eval_duration": 837201284
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "storage-aggregation",
+      "repeat": 1,
+      "elapsed_s": 1.397241,
+      "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000593820032\n}",
+      "expected": {
+        "disk_count": 2,
+        "total_bytes": 3000603820032
+      },
+      "passed": false,
+      "done_reason": "stop",
+      "total_duration": 1394920563,
+      "load_duration": 114496241,
+      "prompt_eval_count": 111,
+      "prompt_eval_duration": 124763995,
+      "eval_count": 31,
+      "eval_duration": 669701445
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "finnish-hardware-extraction",
+      "repeat": 1,
+      "elapsed_s": 1.440316,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ethernet_gbps": 2.5
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1438079012,
+      "load_duration": 107363946,
+      "prompt_eval_count": 128,
+      "prompt_eval_duration": 137794304,
+      "eval_count": 30,
+      "eval_duration": 675673616
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "hardware-extraction",
+      "repeat": 2,
+      "elapsed_s": 1.617417,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ram_gb": 16,
+        "vram_gb": 16
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1615285538,
+      "load_duration": 107490444,
+      "prompt_eval_count": 92,
+      "prompt_eval_duration": 110938640,
+      "eval_count": 37,
+      "eval_duration": 809480241
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "storage-aggregation",
+      "repeat": 2,
+      "elapsed_s": 1.387173,
+      "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000593820032\n}",
+      "expected": {
+        "disk_count": 2,
+        "total_bytes": 3000603820032
+      },
+      "passed": false,
+      "done_reason": "stop",
+      "total_duration": 1385015542,
+      "load_duration": 114726635,
+      "prompt_eval_count": 111,
+      "prompt_eval_duration": 124211155,
+      "eval_count": 31,
+      "eval_duration": 678309318
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "finnish-hardware-extraction",
+      "repeat": 2,
+      "elapsed_s": 1.40562,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ethernet_gbps": 2.5
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1403451159,
+      "load_duration": 107019678,
+      "prompt_eval_count": 128,
+      "prompt_eval_duration": 137818680,
+      "eval_count": 30,
+      "eval_duration": 686107191
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "hardware-extraction",
+      "repeat": 3,
+      "elapsed_s": 1.595435,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ram_gb": 16,
+        "vram_gb": 16
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1593288172,
+      "load_duration": 106216077,
+      "prompt_eval_count": 92,
+      "prompt_eval_duration": 109946072,
+      "eval_count": 37,
+      "eval_duration": 809919194
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "storage-aggregation",
+      "repeat": 3,
+      "elapsed_s": 1.376229,
+      "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000593820032\n}",
+      "expected": {
+        "disk_count": 2,
+        "total_bytes": 3000603820032
+      },
+      "passed": false,
+      "done_reason": "stop",
+      "total_duration": 1374062140,
+      "load_duration": 109493933,
+      "prompt_eval_count": 111,
+      "prompt_eval_duration": 124020356,
+      "eval_count": 31,
+      "eval_duration": 680495565
+    },
+    {
+      "model": "qwen2.5-coder:14b",
+      "case_id": "finnish-hardware-extraction",
+      "repeat": 3,
+      "elapsed_s": 1.368855,
+      "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+      "expected": {
+        "cores": 8,
+        "threads": 16,
+        "ethernet_gbps": 2.5
+      },
+      "passed": true,
+      "done_reason": "stop",
+      "total_duration": 1366695964,
+      "load_duration": 105599016,
+      "prompt_eval_count": 128,
+      "prompt_eval_duration": 137691310,
+      "eval_count": 30,
+      "eval_duration": 663177854
+    }
+  ],
+  "limitations": [
+    "Small real-inference data-transformation corpus, not broad model acceptance.",
+    "No HIP/Vulkan A/B, long-context, tool execution, security, soak or calibration acceptance.",
+    "GPU board power is not whole-system energy; sysfs telemetry is observational.",
+    "Model tag manifests are pinned; upstream/conversion provenance remains unverified.",
+    "Backend library version is unverified; do not infer ROCm 10 from the handbook."
+  ],
+  "status": "blocked",
+  "error_class": "RuntimeError",
+  "error": "Unexpected CPU offload; profile needs separate review",
+  "finished_at": "2026-10-03T15:01:16.353498+00:00"
+}

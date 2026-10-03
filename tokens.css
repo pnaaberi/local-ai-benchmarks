@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light;
+  --paper: #f7f8f6;
+  --surface: #ffffff;
+  --ink: #1d2b31;
+  --muted: #4d6065;
+  --teal: #2f7774;
+  --teal-hover: #205653;
+  --line: #d5dedb;
+  --control-line: #728581;
+  --soft: #edf2ef;
+  --danger: #9c3228;
+  --danger-soft: #fff1ed;
+  --warning: #755016;
+  --warning-soft: #faf1df;
+  --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", monospace;
+  --text-small: .875rem;
+  --text-body: 1rem;
+  --text-lead: 1.125rem;
+  --text-section: 1.625rem;
+  --text-title: clamp(2rem, 4vw, 3.25rem);
+  --text-stat: 2rem;
+  --weight-regular: 400;
+  --weight-medium: 550;
+  --weight-strong: 650;
+  --leading: 1.6;
+  --leading-title: 1.12;
+  --tracking-title: -.035em;
+  --tracking-eyebrow: .07em;
+  --space-xs: .25rem;
+  --space-sm: .5rem;
+  --space-md: .75rem;
+  --space-lg: 1rem;
+  --space-xl: 1.5rem;
+  --space-2xl: 2rem;
+  --space-3xl: 3rem;
+  --space-section: 3.5rem;
+  --content-max: 76rem;
+  --reading-max: 68ch;
+  --page-gutter: 2rem;
+  --control-min: 2.75rem;
+  --control-radius: .25rem;
+  --border: 1px solid var(--line);
+  --control-border: 1px solid var(--control-line);
+  --accent-border: 3px solid var(--teal);
+  --focus-width: 3px;
+  --focus-offset: 3px;
+  --table-min: 48rem;
+  --metric-min: 12rem;
+  --bar-height: .375rem;
+  --skip-layer: 1;
+}
+/* Content breakpoint: split prose and toolbar no longer fit below 48rem. */
+@media (max-width: 48rem) {
+  :root { --page-gutter: 1rem; --space-section: 2rem; }
+}
