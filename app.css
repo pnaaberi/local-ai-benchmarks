@@ -60,7 +60,8 @@ th { font-weight: var(--weight-strong); }
 #best-pick { font-size: var(--text-lead); max-width: none; }
 #model-rows tr:first-child { background: var(--soft); }
 #model-rows th, #task-matrix th { min-width: var(--model-name-min); }
-.intro { padding-block: var(--space-xl); }
+.intro { display: block; padding-block: var(--space-xl); }
+.intro h1 { font-size: var(--text-section); margin-block: var(--space-md); }
 .pass { color: var(--teal); font-weight: var(--weight-strong); }
 .fail { color: var(--danger); font-weight: var(--weight-strong); }
 summary { min-height: var(--control-min); cursor: pointer; padding-block: var(--space-sm); color: var(--teal); text-decoration: underline; }
