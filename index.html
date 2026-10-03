@@ -13,11 +13,59 @@
 <a class="skip" href="#content">Siirry tuloksiin</a>
 <div class="page">
 <header class="masthead"><a class="brand" href="#content">Local AI <strong>Benchmarks</strong></a><span class="meta">RDNA4-16 / mittauspäiväkirja</span></header>
-<nav aria-label="Osioiden navigointi"><a href="#results">Tulokset</a><a href="#hardware">Laitteisto</a><a href="#method">Menetelmä</a><a href="#evidence">Todisteet</a><a href="#next">Seuraavat ajot</a></nav>
+<nav aria-label="Osioiden navigointi"><a href="#fits">Mallivertailu</a><a href="#research">Clef ja malliluettelo</a><a href="#results">Ensimmäinen koe</a><a href="#hardware">Laitteisto</a><a href="#method">Menetelmä</a><a href="#evidence">Todisteet</a><a href="#next">Seuraavat ajot</a></nav>
 <main id="content" tabindex="-1">
 <section class="intro"><div><p class="eyebrow">Paikallinen inferenssi · mitattu, ei mainostettu</p><h1>Mitä 16 GB:n Radeon<br>oikeasti tekee?</h1><p class="lead">Yksi oikea työasema. Täsmälliset tehtävät. Jokainen vastaus ja virhe mukana. Ei yleistä mallien paremmuusjärjestystä.</p><p class="meta">Ensimmäinen mittaus · <time datetime="2026-10-03">3. lokakuuta 2026</time> · Ollama 0.20.0</p></div><aside class="profile"><p class="eyebrow">Testikone / RDNA4-16</p><p class="profile-title">Radeon RX 9070 XT</p><p>16 GB VRAM · Ryzen 7 5800X<br>16 GB RAM · CachyOS Linux</p><a href="#hardware">Näytä koko laitteisto →</a></aside></section>
-<div class="notice"><strong>Rajattu koe, ei tuotantohyväksyntää.</strong> Kolme tehtävää oikeista laitteistotiedoista, kukin kolme kertaa. Toistot eivät ole yhdeksän riippumatonta tehtävää. Malli vastasi laskutehtävään väärin kaikilla toistoilla.</div>
-<section id="results"><div class="section-heading"><div><p class="eyebrow">01 / Mitatut tulokset</p><h2>Qwen2.5-Coder 14B · Q4_K_M</h2></div><a class="action" href="results.json" download> Lataa mittauskuitit ↓</a></div>
+<div class="notice"><strong>Rajatut kokeet, ei tuotantohyväksyntää.</strong> Kolme tehtävää oikeista laitteistotiedoista, kukin kolme kertaa per malli. Toistot eivät ole yhdeksän riippumatonta tehtävää. Ensimmäinen Qwen2.5-Coder-koe epäonnistui laskutehtävässä kaikilla toistoilla; uudet kokeet alla.</div>
+<section id="fits">
+  <div class="section-heading">
+    <div><p class="eyebrow">Uusin koe / GPU-sopivuus</p><h2>Kolme paikallista mallia. Todelliset vastaukset.</h2></div>
+    <a href="fits.json" download>Lataa kaikki 27 mittauskuittia ↓</a>
+  </div>
+  <p>4K-kontekstiasetus, lyhyet syötteet, yksi malli kerrallaan. Ajomoottori ilmoitti kaikki kolme profiilia kokonaan GPU:ssa. Tämä ei todista täyttä 4K-syötettä, pitkää kuormaa eikä yleistä mallien paremmuutta.</p>
+  <p id="fit-status" class="meta" role="status">Mittaukset ovat saatavilla myös JSON-tiedostona.</p>
+  <div id="fit-content" hidden>
+    <p class="meta">Kapealla näytöllä vieritä taulukkoa sivusuunnassa. Yksittäiset vastaukset ovat oikealla.</p>
+    <div class="table-scroll" role="region" aria-label="Uusien mallien vertailu, vieritettävä taulukko" tabindex="0">
+      <table>
+        <caption>3 tehtävää × 3 toistoa per malli · lämmin pyyntö · mediaanit</caption>
+        <thead><tr><th scope="col">Malli</th><th scope="col" class="number">GPU-residenssi</th><th scope="col" class="number">Oikein</th><th scope="col" class="number">Viive</th><th scope="col" class="number">Decode tok/s</th><th scope="col">Mittauskuitit</th></tr></thead>
+        <tbody id="fit-rows"></tbody>
+      </table>
+    </div>
+    <p>Gemma E4B on mallin nimi; ajomoottorin parametrimäärä on 7,5B. 27B-mallin paikallinen tagi ilmoittaa IQ3:n, mutta ajomoottorin kvantisointitieto on <strong>tuntematon</strong>. Se ei ole Cloudflaren Clef.</p>
+    <details id="fit-session"><summary>Erät, estetty yritys ja toistamisen rajat</summary><p>Ensimmäinen erä tuotti Gemman 9 vastausta. Seuraavan mallin aloitus estyi purkuvaiheessa. Purettavan mallin odotus lisättiin; Qwen-mallit ajettiin toisessa erässä. Ensimmäinen estetty yritys säilyy kuiteissa, mutta sitä ei lasketa laatupisteeksi. Ajatukset pois käytöstä niitä tukevissa malleissa; prompt-välimuistia ei poistettu.</p><p>Resurssit tarkistettiin ennen ja jälkeen pyyntöjen, ei jatkuvana lämpösuojauksena. Tulos on juuri näiden paikallisten painojen pieni koe, ei suositus agenttien tuotantokäyttöön.</p></details>
+  </div>
+  <ul class="downloads">
+    <li><a href="fit_runner.py" download>Uusi mittausrunner · Python</a><span>Ei latauksia tai mallivastausten suorittamista</span></li>
+    <li><a href="fit_runner_initial.py" download>Ensimmäisen erän tarkka runner</a><span>Alkuperäinen purkuvaiheen esto säilytetty</span></li>
+  </ul>
+  <noscript><p>Vertailutaulukko tarvitsee JavaScriptin. Kaikki vastaukset ja erät ovat ladattavassa JSON-tiedostossa.</p></noscript>
+</section>
+<section id="research">
+  <p class="eyebrow">Saatavuusselvitys / ei paikallinen suoritus</p>
+  <h2>Clef on päätösmalli, ei tavallinen chat-malli.</h2>
+  <p>Clef Flash 9B ja Clef 27B ovat Jev / SystemOne -tyyppisiä malleja: tila ja tyypitetyt kysymykset sisään, vaihtoehtojen todennäköisyydet ulos. Erillinen <strong>joint schema head</strong> kuuluu malliin. Tavallinen Ollaman tekstigenerointi ei testaa tätä päätöspäätä.</p>
+  <p id="research-status" class="meta" role="status">Saatavuusselvitys on saatavilla myös JSON-tiedostona.</p>
+  <div id="research-content" hidden>
+    <p class="meta">Vieritä taulukkoa sivusuunnassa nähdäksesi kaikki lähteet.</p>
+    <div class="table-scroll" role="region" aria-label="Clef-mallien saatavuus, vieritettävä taulukko" tabindex="0">
+      <table>
+        <caption>Pinnatut julkaisulähteet · ei Clef-nopeuksia tai laatupisteitä tästä koneesta</caption>
+        <thead><tr><th scope="col">Malli</th><th scope="col">Painot</th><th scope="col">Paikallinen tila</th><th scope="col">Mitä puuttuu</th><th scope="col">Lähteet</th></tr></thead>
+        <tbody id="research-rows"></tbody>
+      </table>
+    </div>
+    <aside class="blocked"><strong>Painot ovat ladattavissa, paikallinen testi on estetty.</strong> Viralliset BF16-painot ylittävät 16 GB:n GPU-muistin. Virallisissa repoissa ei ole GGUF-tiedostoja. Päätöspään säilyttävä kvantisointi ja AMD-yhteensopiva runtime pitää validoida erikseen. Testikoneen järjestelmä-Pythonista puuttuvat Torch ja Transformers; tämä ei kartoita kaikkia mahdollisia venv-ympäristöjä.</aside>
+    <p>Ei Clef-painojen latauksia, mallirepon koodin suorittamista eikä maksullista Cloudflare-API-ajoa. Valmistajan H200-tulokset eivät ole tämän Radeon-koneen mittauksia.</p>
+  </div>
+  <ul class="downloads">
+    <li><a href="research.json" download>Clef-selvitys · JSON</a><span>Revisiot, tiedostokoot, hashit ja eston syy</span></li>
+    <li><a href="catalog.json" download>Koko Cloudflare-malliluettelo · JSON</a><span>Virallisen dokumentaation pinnattu tilannekuva</span></li>
+  </ul>
+  <details id="catalog"><summary id="catalog-title">Näytä Cloudflaren malliluettelo</summary><p>Luettelo sisältää myös kuva-, ääni- ja embedding-malleja. Luettelossa olo ei todista ladattavia painoja, paikallista sopivuutta tai tämänhetkistä pilvipalvelun saatavuutta. Näitä muita malleja ei ole paikallisesti testattu tässä kokeessa.</p><p id="catalog-status" class="meta" role="status"></p><ul id="catalog-list"></ul></details>
+</section>
+<section id="results"><div class="section-heading"><div><p class="eyebrow">Ensimmäinen koe / 3. lokakuuta</p><h2>Qwen2.5-Coder 14B · Q4_K_M</h2></div><a class="action" href="results.json" download> Lataa mittauskuitit ↓</a></div>
 <div id="load-status" role="status">Tulokset ja asetukset löytyvät myös ladattavista mittauskuiteista.</div>
 <noscript><p>JavaScript on pois käytöstä. Mittauksessa 6/9 täsmällistä vastausta, mediaaniviive 1,41 s. Kaikki vastaukset ja asetukset ovat ladattavissa mittauskuiteista. Suodatus tarvitsee JavaScriptin.</p></noscript>
 <div id="result-content" hidden>

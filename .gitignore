@@ -13,3 +13,8 @@
 !benchmark.py
 !README.md
 !SHA256SUMS
+!fits.json
+!fit_runner.py
+!fit_runner_initial.py
+!research.json
+!catalog.json

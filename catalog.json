@@ -1,0 +1,423 @@
+{
+  "schema": "upstream-model-catalog.v1",
+  "checked_at": "2026-10-03T21:16:19.946309+00:00",
+  "source_revision": "e43015cd6cddad3ee1c0fa087c4d5022e65e7c98",
+  "source_url": "https://api.github.com/repos/cloudflare/cloudflare-docs/git/trees/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98?recursive=1",
+  "entries": [
+    {
+      "slug": "apertus-v1.5-8b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/apertus-v1.5-8b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/apertus-v1.5-8b.json"
+    },
+    {
+      "slug": "aura-1",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/aura-1/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/aura-1.json"
+    },
+    {
+      "slug": "aura-2-en",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/aura-2-en/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/aura-2-en.json"
+    },
+    {
+      "slug": "aura-2-es",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/aura-2-es/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/aura-2-es.json"
+    },
+    {
+      "slug": "bge-base-en-v1.5",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/bge-base-en-v1.5/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/bge-base-en-v1.5.json"
+    },
+    {
+      "slug": "bge-large-en-v1.5",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/bge-large-en-v1.5/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/bge-large-en-v1.5.json"
+    },
+    {
+      "slug": "bge-m3",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/bge-m3/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/bge-m3.json"
+    },
+    {
+      "slug": "bge-reranker-base",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/bge-reranker-base/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/bge-reranker-base.json"
+    },
+    {
+      "slug": "bge-small-en-v1.5",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/bge-small-en-v1.5/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/bge-small-en-v1.5.json"
+    },
+    {
+      "slug": "clef",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/clef/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/clef.json"
+    },
+    {
+      "slug": "clef-flash",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/clef-flash.json"
+    },
+    {
+      "slug": "deepseek-r1-distill-qwen-32b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/deepseek-r1-distill-qwen-32b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/deepseek-r1-distill-qwen-32b.json"
+    },
+    {
+      "slug": "deepseek-v4-flash-0731",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/deepseek-v4-flash-0731/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/deepseek-v4-flash-0731.json"
+    },
+    {
+      "slug": "deepseek-v4-pro-0813",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/deepseek-v4-pro-0813/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/deepseek-v4-pro-0813.json"
+    },
+    {
+      "slug": "distilbert-sst-2-int8",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/distilbert-sst-2-int8/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/distilbert-sst-2-int8.json"
+    },
+    {
+      "slug": "dreamshaper-8-lcm",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/dreamshaper-8-lcm/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/dreamshaper-8-lcm.json"
+    },
+    {
+      "slug": "embeddinggemma-300m",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/embeddinggemma-300m/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/embeddinggemma-300m.json"
+    },
+    {
+      "slug": "eurollm-9b-it",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/eurollm-9b-it/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/eurollm-9b-it.json"
+    },
+    {
+      "slug": "flux",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/flux/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/flux.json"
+    },
+    {
+      "slug": "flux-1-schnell",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/flux-1-schnell/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/flux-1-schnell.json"
+    },
+    {
+      "slug": "flux-2-dev",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/flux-2-dev/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/flux-2-dev.json"
+    },
+    {
+      "slug": "flux-2-klein-4b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/flux-2-klein-4b.json"
+    },
+    {
+      "slug": "flux-2-klein-9b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/flux-2-klein-9b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/flux-2-klein-9b.json"
+    },
+    {
+      "slug": "gemma-2b-it-lora",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gemma-2b-it-lora/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gemma-2b-it-lora.json"
+    },
+    {
+      "slug": "gemma-4-26b-a4b-it",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gemma-4-26b-a4b-it/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gemma-4-26b-a4b-it.json"
+    },
+    {
+      "slug": "gemma-7b-it-lora",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gemma-7b-it-lora/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gemma-7b-it-lora.json"
+    },
+    {
+      "slug": "gemma-sea-lion-v4-27b-it",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gemma-sea-lion-v4-27b-it/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gemma-sea-lion-v4-27b-it.json"
+    },
+    {
+      "slug": "glm-4.7-flash",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/glm-4.7-flash/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/glm-4.7-flash.json"
+    },
+    {
+      "slug": "glm-5.2",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/glm-5.2/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/glm-5.2.json"
+    },
+    {
+      "slug": "glm-5.3",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/glm-5.3.json"
+    },
+    {
+      "slug": "glm-5.3-flash",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/glm-5.3-flash.json"
+    },
+    {
+      "slug": "gpt-oss-120b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gpt-oss-120b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gpt-oss-120b.json"
+    },
+    {
+      "slug": "gpt-oss-20b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/gpt-oss-20b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/gpt-oss-20b.json"
+    },
+    {
+      "slug": "granite-4.0-h-micro",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/granite-4.0-h-micro/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/granite-4.0-h-micro.json"
+    },
+    {
+      "slug": "indictrans2-en-indic-1B",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/indictrans2-en-indic-1B/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/indictrans2-en-indic-1B.json"
+    },
+    {
+      "slug": "kimi-k2.6",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/kimi-k2.6/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/kimi-k2.6.json"
+    },
+    {
+      "slug": "kimi-k2.7-code",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/kimi-k2.7-code/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/kimi-k2.7-code.json"
+    },
+    {
+      "slug": "llama-2-7b-chat-hf-lora",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-2-7b-chat-hf-lora/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-2-7b-chat-hf-lora.json"
+    },
+    {
+      "slug": "llama-3.1-8b-instruct-fp8",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct-fp8/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-3.1-8b-instruct-fp8.json"
+    },
+    {
+      "slug": "llama-3.2-11b-vision-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-3.2-11b-vision-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-3.2-11b-vision-instruct.json"
+    },
+    {
+      "slug": "llama-3.2-1b-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-3.2-1b-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-3.2-1b-instruct.json"
+    },
+    {
+      "slug": "llama-3.2-3b-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-3.2-3b-instruct.json"
+    },
+    {
+      "slug": "llama-3.3-70b-instruct-fp8-fast",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-3.3-70b-instruct-fp8-fast/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-3.3-70b-instruct-fp8-fast.json"
+    },
+    {
+      "slug": "llama-4-scout-17b-16e-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-4-scout-17b-16e-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-4-scout-17b-16e-instruct.json"
+    },
+    {
+      "slug": "llama-guard-3-8b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llama-guard-3-8b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llama-guard-3-8b.json"
+    },
+    {
+      "slug": "llava-1.5-7b-hf",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/llava-1.5-7b-hf/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/llava-1.5-7b-hf.json"
+    },
+    {
+      "slug": "lucid-origin",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/lucid-origin/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/lucid-origin.json"
+    },
+    {
+      "slug": "m2m100-1.2b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/m2m100-1.2b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/m2m100-1.2b.json"
+    },
+    {
+      "slug": "melotts",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/melotts/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/melotts.json"
+    },
+    {
+      "slug": "mistral-7b-instruct-v0.2-lora",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/mistral-7b-instruct-v0.2-lora/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/mistral-7b-instruct-v0.2-lora.json"
+    },
+    {
+      "slug": "mistral-small-3.1-24b-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/mistral-small-3.1-24b-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/mistral-small-3.1-24b-instruct.json"
+    },
+    {
+      "slug": "moondream3.1-9B-A2B",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/moondream3.1-9B-A2B/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/moondream3.1-9B-A2B.json"
+    },
+    {
+      "slug": "nemotron-3-120b-a12b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/nemotron-3-120b-a12b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/nemotron-3-120b-a12b.json"
+    },
+    {
+      "slug": "nova-3",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/nova-3/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/nova-3.json"
+    },
+    {
+      "slug": "phoenix-1.0",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/phoenix-1.0/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/phoenix-1.0.json"
+    },
+    {
+      "slug": "plamo-embedding-1b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/plamo-embedding-1b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/plamo-embedding-1b.json"
+    },
+    {
+      "slug": "qwen2.5-coder-32b-instruct",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/qwen2.5-coder-32b-instruct/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/qwen2.5-coder-32b-instruct.json"
+    },
+    {
+      "slug": "qwen3-30b-a3b-fp8",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/qwen3-30b-a3b-fp8/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/qwen3-30b-a3b-fp8.json"
+    },
+    {
+      "slug": "qwen3-embedding-0.6b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/qwen3-embedding-0.6b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/qwen3-embedding-0.6b.json"
+    },
+    {
+      "slug": "qwen3.8-27b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/qwen3.8-27b.json"
+    },
+    {
+      "slug": "qwq-32b",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/qwq-32b/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/qwq-32b.json"
+    },
+    {
+      "slug": "resnet-50",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/resnet-50/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/resnet-50.json"
+    },
+    {
+      "slug": "smart-turn-v2",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/smart-turn-v2/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/smart-turn-v2.json"
+    },
+    {
+      "slug": "stable-diffusion-v1-5-inpainting",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/stable-diffusion-v1-5-inpainting/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/stable-diffusion-v1-5-inpainting.json"
+    },
+    {
+      "slug": "stable-diffusion-xl-base-1.0",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-base-1.0/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/stable-diffusion-xl-base-1.0.json"
+    },
+    {
+      "slug": "stable-diffusion-xl-lightning",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/stable-diffusion-xl-lightning/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/stable-diffusion-xl-lightning.json"
+    },
+    {
+      "slug": "whisper",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/whisper/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/whisper.json"
+    },
+    {
+      "slug": "whisper-large-v3-turbo",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/whisper-large-v3-turbo/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/whisper-large-v3-turbo.json"
+    },
+    {
+      "slug": "whisper-tiny-en",
+      "status": "catalog-only-not-locally-tested",
+      "docs_url": "https://developers.cloudflare.com/workers-ai/models/whisper-tiny-en/",
+      "source_url": "https://github.com/cloudflare/cloudflare-docs/blob/e43015cd6cddad3ee1c0fa087c4d5022e65e7c98/src/content/workers-ai-models/whisper-tiny-en.json"
+    }
+  ],
+  "scope": "All model-card entries in the official documentation snapshot. Includes non-LLM tasks; not proof of weight availability, local fit or live Cloudflare service availability."
+}

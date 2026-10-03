@@ -1,0 +1,2475 @@
+{
+  "schema": "model-fit-comparison.v1",
+  "machine_alias": "RDNA4-16",
+  "checked_at": "2026-10-03T21:16:19.946309+00:00",
+  "profiles": [
+    {
+      "name": "Gemma 4 E4B Q4_K_M",
+      "status": "completed",
+      "runs": [
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 1.138469,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1133320625,
+          "load_duration": 301381533,
+          "prompt_eval_count": 75,
+          "prompt_eval_duration": 82346854,
+          "eval_count": 33,
+          "eval_duration": 520712004
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 1,
+          "elapsed_s": 1.12997,
+          "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": false,
+          "total_duration": 1128772981,
+          "load_duration": 262799391,
+          "prompt_eval_count": 93,
+          "prompt_eval_duration": 87343435,
+          "eval_count": 33,
+          "eval_duration": 567960301
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 1.102513,
+          "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1101431474,
+          "load_duration": 277795301,
+          "prompt_eval_count": 106,
+          "prompt_eval_duration": 92394016,
+          "eval_count": 31,
+          "eval_duration": 523146501
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 1.154927,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1153844256,
+          "load_duration": 294005818,
+          "prompt_eval_count": 75,
+          "prompt_eval_duration": 81848277,
+          "eval_count": 33,
+          "eval_duration": 584534181
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 2,
+          "elapsed_s": 1.323567,
+          "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": false,
+          "total_duration": 1322354044,
+          "load_duration": 264389121,
+          "prompt_eval_count": 93,
+          "prompt_eval_duration": 85496209,
+          "eval_count": 33,
+          "eval_duration": 767485902
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 1.156726,
+          "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1155639383,
+          "load_duration": 271170960,
+          "prompt_eval_count": 106,
+          "prompt_eval_duration": 94325580,
+          "eval_count": 31,
+          "eval_duration": 589650832
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 1.102913,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1101772095,
+          "load_duration": 276766696,
+          "prompt_eval_count": 75,
+          "prompt_eval_duration": 80871499,
+          "eval_count": 33,
+          "eval_duration": 529975676
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 3,
+          "elapsed_s": 1.162371,
+          "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": false,
+          "total_duration": 1161095637,
+          "load_duration": 275535830,
+          "prompt_eval_count": 93,
+          "prompt_eval_duration": 85995920,
+          "eval_count": 33,
+          "eval_duration": 601477662
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 1.109287,
+          "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1108189850,
+          "load_duration": 268778850,
+          "prompt_eval_count": 106,
+          "prompt_eval_duration": 90810586,
+          "eval_count": 31,
+          "eval_duration": 551096871
+        }
+      ],
+      "samples": [
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 47.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 9139671040,
+          "vram_used_bytes": 1999020032,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 72.0
+          },
+          "ram_available_bytes": 7626047488,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 31
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7544156160,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 21
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7542792192,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 49.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7568220160,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 33
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7574155264,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 4
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7629221888,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 17
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7633227776,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7753838592,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 23
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 75.0
+          },
+          "ram_available_bytes": 7759372288,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 5
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7759470592,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 31
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7768113152,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7911116800,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 22
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7915286528,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 8002916352,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 26
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 7975575552,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 8003244032,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 22
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 8009867264,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 46.0,
+            "junction": 48.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 8043368448,
+          "vram_used_bytes": 8152657920,
+          "gpu_busy_percent": 25
+        }
+      ],
+      "manifest_digest": "be3d9014bb1274550c327e509246d450f7910e376409fbc08b5e2679a8010b8f",
+      "artifact_size_bytes": 5335292377,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "7.5B",
+        "quantization_level": "Q4_K_M"
+      },
+      "thinking_disabled": true,
+      "warmup_s": 7.037552,
+      "resident_size_bytes": 6304899968,
+      "resident_vram_bytes": 6304899968,
+      "correct": 6,
+      "median_latency_s": 1.138469,
+      "median_decode_tps": 56.45521010173398,
+      "session_index": 0,
+      "runner_sha256": "a916302e02207def03e1b46d3756d3c7febd70d0baaec364c975949139dfe365"
+    },
+    {
+      "name": "Qwen3 14B Q4_K_M",
+      "status": "completed",
+      "runs": [
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 1.09628,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1095433224,
+          "load_duration": 112186721,
+          "prompt_eval_count": 79,
+          "prompt_eval_duration": 113994542,
+          "eval_count": 37,
+          "eval_duration": 774536004
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 1,
+          "elapsed_s": 1.028521,
+          "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1027648244,
+          "load_duration": 103774226,
+          "prompt_eval_count": 98,
+          "prompt_eval_duration": 127139522,
+          "eval_count": 31,
+          "eval_duration": 669111751
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 1.010376,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1009397840,
+          "load_duration": 103244048,
+          "prompt_eval_count": 115,
+          "prompt_eval_duration": 139811381,
+          "eval_count": 30,
+          "eval_duration": 645693444
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 1.103419,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1102459202,
+          "load_duration": 102983087,
+          "prompt_eval_count": 79,
+          "prompt_eval_duration": 114232910,
+          "eval_count": 37,
+          "eval_duration": 789929272
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 2,
+          "elapsed_s": 1.055651,
+          "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1054751592,
+          "load_duration": 105041450,
+          "prompt_eval_count": 98,
+          "prompt_eval_duration": 126645923,
+          "eval_count": 31,
+          "eval_duration": 702142223
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 1.173606,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1172535954,
+          "load_duration": 104943455,
+          "prompt_eval_count": 115,
+          "prompt_eval_duration": 173430477,
+          "eval_count": 30,
+          "eval_duration": 778426199
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 1.131856,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1130857286,
+          "load_duration": 103749479,
+          "prompt_eval_count": 79,
+          "prompt_eval_duration": 113873355,
+          "eval_count": 37,
+          "eval_duration": 824209392
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 3,
+          "elapsed_s": 1.031762,
+          "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1030924818,
+          "load_duration": 108950874,
+          "prompt_eval_count": 98,
+          "prompt_eval_duration": 126704924,
+          "eval_count": 31,
+          "eval_duration": 690211230
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 1.108732,
+          "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 1107707244,
+          "load_duration": 101780764,
+          "prompt_eval_count": 115,
+          "prompt_eval_duration": 247475844,
+          "eval_count": 30,
+          "eval_duration": 640613052
+        }
+      ],
+      "samples": [
+        {
+          "temperatures_c": {
+            "edge": 50.0,
+            "junction": 50.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 9776513024,
+          "vram_used_bytes": 1999020032,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 50.0,
+            "junction": 51.0,
+            "mem": 74.0
+          },
+          "ram_available_bytes": 9597079552,
+          "vram_used_bytes": 12082491392,
+          "gpu_busy_percent": 52
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 57.0,
+            "mem": 77.0
+          },
+          "ram_available_bytes": 9531019264,
+          "vram_used_bytes": 12082499584,
+          "gpu_busy_percent": 58
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 61.0,
+            "mem": 78.0
+          },
+          "ram_available_bytes": 9530097664,
+          "vram_used_bytes": 12082499584,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 55.0,
+            "mem": 77.0
+          },
+          "ram_available_bytes": 9497833472,
+          "vram_used_bytes": 12082499584,
+          "gpu_busy_percent": 61
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 57.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9497870336,
+          "vram_used_bytes": 12082499584,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 56.0,
+            "mem": 78.0
+          },
+          "ram_available_bytes": 9467813888,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 58
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 57.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9467039744,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 56.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 9442750464,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 56
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 63.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9439911936,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 4
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 57.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9369456640,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 71
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 58.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9369489408,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 3
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 55.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 9285378048,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 57
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 59.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9284603904,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 4
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 61.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9255133184,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 61
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 62.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9255391232,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 4
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 56.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 9245614080,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 54
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 58.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 9247862784,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 4
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 55.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 9234939904,
+          "vram_used_bytes": 12082503680,
+          "gpu_busy_percent": 54
+        }
+      ],
+      "manifest_digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+      "artifact_size_bytes": 9276198565,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3",
+        "families": [
+          "qwen3"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      },
+      "thinking_disabled": true,
+      "warmup_s": 4.832245,
+      "resident_size_bytes": 10121968256,
+      "resident_vram_bytes": 10121968256,
+      "correct": 9,
+      "median_latency_s": 1.09628,
+      "median_decode_tps": 46.330078576067336,
+      "unload_was_pending": true,
+      "session_index": 1,
+      "runner_sha256": "6c6657723fb5c12dddd30f1ac2e668a74d6bbcf019fcbb21a11c7bbce61932ce"
+    },
+    {
+      "name": "Qwen3.8 27B local IQ3 tag",
+      "status": "completed",
+      "runs": [
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 3.470682,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 3469679257,
+          "load_duration": 188271426,
+          "prompt_eval_count": 63,
+          "prompt_eval_duration": 753054825,
+          "eval_count": 31,
+          "eval_duration": 2269159658
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 1,
+          "elapsed_s": 2.854999,
+          "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2854133891,
+          "load_duration": 164478295,
+          "prompt_eval_count": 82,
+          "prompt_eval_duration": 792232017,
+          "eval_count": 27,
+          "eval_duration": 1685994159
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 1,
+          "elapsed_s": 2.695332,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2694274186,
+          "load_duration": 169049074,
+          "prompt_eval_count": 97,
+          "prompt_eval_duration": 1163424132,
+          "eval_count": 25,
+          "eval_duration": 1114595516
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 2.482162,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2481241628,
+          "load_duration": 172704491,
+          "prompt_eval_count": 63,
+          "prompt_eval_duration": 429119842,
+          "eval_count": 31,
+          "eval_duration": 1627194521
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 2,
+          "elapsed_s": 2.789379,
+          "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2788485061,
+          "load_duration": 164059828,
+          "prompt_eval_count": 82,
+          "prompt_eval_duration": 719944446,
+          "eval_count": 27,
+          "eval_duration": 1709928276
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 2,
+          "elapsed_s": 2.545388,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2544337467,
+          "load_duration": 167461196,
+          "prompt_eval_count": 97,
+          "prompt_eval_duration": 859156028,
+          "eval_count": 25,
+          "eval_duration": 1315400038
+        },
+        {
+          "case_id": "hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 2.268632,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2267623579,
+          "load_duration": 168756313,
+          "prompt_eval_count": 63,
+          "prompt_eval_duration": 492650309,
+          "eval_count": 31,
+          "eval_duration": 1401883216
+        },
+        {
+          "case_id": "storage-aggregation",
+          "repeat": 3,
+          "elapsed_s": 2.571203,
+          "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2570330477,
+          "load_duration": 169124666,
+          "prompt_eval_count": 82,
+          "prompt_eval_duration": 618288516,
+          "eval_count": 27,
+          "eval_duration": 1567858419
+        },
+        {
+          "case_id": "finnish-hardware-extraction",
+          "repeat": 3,
+          "elapsed_s": 2.586409,
+          "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          },
+          "done_reason": "stop",
+          "passed": true,
+          "total_duration": 2585227242,
+          "load_duration": 161233301,
+          "prompt_eval_count": 97,
+          "prompt_eval_duration": 1045580299,
+          "eval_count": 25,
+          "eval_duration": 1171458359
+        }
+      ],
+      "samples": [
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 53.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 10684301312,
+          "vram_used_bytes": 2811146240,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 50.0,
+            "junction": 52.0,
+            "mem": 76.0
+          },
+          "ram_available_bytes": 8679682048,
+          "vram_used_bytes": 17004773376,
+          "gpu_busy_percent": 89
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 63.0,
+            "mem": 77.0
+          },
+          "ram_available_bytes": 8429395968,
+          "vram_used_bytes": 17010728960,
+          "gpu_busy_percent": 80
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 61.0,
+            "mem": 78.0
+          },
+          "ram_available_bytes": 8428244992,
+          "vram_used_bytes": 17010728960,
+          "gpu_busy_percent": 99
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 74.0,
+            "mem": 78.0
+          },
+          "ram_available_bytes": 8422494208,
+          "vram_used_bytes": 17010741248,
+          "gpu_busy_percent": 93
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 60.0,
+            "mem": 78.0
+          },
+          "ram_available_bytes": 8421994496,
+          "vram_used_bytes": 17010741248,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 73.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8308817920,
+          "vram_used_bytes": 17010749440,
+          "gpu_busy_percent": 98
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 59.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8307232768,
+          "vram_used_bytes": 17010749440,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 71.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8235999232,
+          "vram_used_bytes": 17010757632,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 58.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8247107584,
+          "vram_used_bytes": 17010757632,
+          "gpu_busy_percent": 49
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 60.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8171171840,
+          "vram_used_bytes": 17010765824,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 65.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8170950656,
+          "vram_used_bytes": 17010765824,
+          "gpu_busy_percent": 6
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 67.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8166359040,
+          "vram_used_bytes": 17010778112,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 66.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8170864640,
+          "vram_used_bytes": 17010778112,
+          "gpu_busy_percent": 14
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 71.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8156372992,
+          "vram_used_bytes": 17010786304,
+          "gpu_busy_percent": 100
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 59.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8157544448,
+          "vram_used_bytes": 17010786304,
+          "gpu_busy_percent": 87
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 66.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 8113393664,
+          "vram_used_bytes": 17010798592,
+          "gpu_busy_percent": 88
+        },
+        {
+          "temperatures_c": {
+            "edge": 52.0,
+            "junction": 59.0,
+            "mem": 80.0
+          },
+          "ram_available_bytes": 8111210496,
+          "vram_used_bytes": 17010798592,
+          "gpu_busy_percent": 96
+        },
+        {
+          "temperatures_c": {
+            "edge": 51.0,
+            "junction": 63.0,
+            "mem": 79.0
+          },
+          "ram_available_bytes": 8160002048,
+          "vram_used_bytes": 17010814976,
+          "gpu_busy_percent": 65
+        }
+      ],
+      "manifest_digest": "88984afc28a325787dd9e42a97f06a23764a415b6335cad99277a71a77bc5a58",
+      "artifact_size_bytes": 10094358011,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "26.9B",
+        "quantization_level": "unknown"
+      },
+      "thinking_disabled": false,
+      "warmup_s": 5.977476,
+      "resident_size_bytes": 14660927488,
+      "resident_vram_bytes": 14660927488,
+      "correct": 9,
+      "median_latency_s": 2.586409,
+      "median_decode_tps": 19.00562511615193,
+      "unload_was_pending": true,
+      "session_index": 1,
+      "runner_sha256": "6c6657723fb5c12dddd30f1ac2e668a74d6bbcf019fcbb21a11c7bbce61932ce"
+    }
+  ],
+  "sessions": [
+    {
+      "schema": "installed-model-fit.v1",
+      "machine_alias": "RDNA4-16",
+      "runtime": {
+        "version": "0.20.0"
+      },
+      "options": {
+        "num_ctx": 4096,
+        "num_predict": 128,
+        "temperature": 0,
+        "seed": 42
+      },
+      "cases": [
+        {
+          "id": "hardware-extraction",
+          "task": "Convert measured hardware facts into JSON",
+          "prompt": "Extract only these measured facts: CPU AMD Ryzen 7 5800X, 8 cores, 16 threads. Installed RAM 16 GB. GPU VRAM 16 GB. Return exactly JSON keys cores, threads, ram_gb, vram_gb with numeric values. No explanation.",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          }
+        },
+        {
+          "id": "storage-aggregation",
+          "task": "Aggregate actual installed storage capacities",
+          "prompt": "Installed disks: Samsung SSD 990 PRO 2TB, capacity 2000398934016 bytes; Samsung SSD 860 EVO 1TB, capacity 1000204886016 bytes. Ignore virtual RAM disks. Return JSON with disk_count and total_bytes. Calculate the exact total; no explanation.",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          }
+        },
+        {
+          "id": "finnish-hardware-extraction",
+          "task": "Extract actual hardware facts from Finnish text",
+          "prompt": "Poimi tiedot JSON-muodossa. Koneessa on Ryzen 7 5800X: 8 ydintä ja 16 säiettä. Emolevy on ASUS TUF GAMING B550-PLUS. Verkkokortti on Realtek RTL8125, 2.5 GbE. Vastaa vain avaimilla cores, threads, ethernet_gbps; arvot numeroina.",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          }
+        }
+      ],
+      "repeats_per_case": 3,
+      "profiles": [
+        {
+          "name": "Gemma 4 E4B Q4_K_M",
+          "status": "completed",
+          "runs": [
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 1.138469,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1133320625,
+              "load_duration": 301381533,
+              "prompt_eval_count": 75,
+              "prompt_eval_duration": 82346854,
+              "eval_count": 33,
+              "eval_duration": 520712004
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 1,
+              "elapsed_s": 1.12997,
+              "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": false,
+              "total_duration": 1128772981,
+              "load_duration": 262799391,
+              "prompt_eval_count": 93,
+              "prompt_eval_duration": 87343435,
+              "eval_count": 33,
+              "eval_duration": 567960301
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 1.102513,
+              "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1101431474,
+              "load_duration": 277795301,
+              "prompt_eval_count": 106,
+              "prompt_eval_duration": 92394016,
+              "eval_count": 31,
+              "eval_duration": 523146501
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 1.154927,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1153844256,
+              "load_duration": 294005818,
+              "prompt_eval_count": 75,
+              "prompt_eval_duration": 81848277,
+              "eval_count": 33,
+              "eval_duration": 584534181
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 2,
+              "elapsed_s": 1.323567,
+              "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": false,
+              "total_duration": 1322354044,
+              "load_duration": 264389121,
+              "prompt_eval_count": 93,
+              "prompt_eval_duration": 85496209,
+              "eval_count": 33,
+              "eval_duration": 767485902
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 1.156726,
+              "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1155639383,
+              "load_duration": 271170960,
+              "prompt_eval_count": 106,
+              "prompt_eval_duration": 94325580,
+              "eval_count": 31,
+              "eval_duration": 589650832
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 1.102913,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1101772095,
+              "load_duration": 276766696,
+              "prompt_eval_count": 75,
+              "prompt_eval_duration": 80871499,
+              "eval_count": 33,
+              "eval_duration": 529975676
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 3,
+              "elapsed_s": 1.162371,
+              "output": "{\n\"disk_count\": 2,\n\"total_bytes\": 3000603819024\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": false,
+              "total_duration": 1161095637,
+              "load_duration": 275535830,
+              "prompt_eval_count": 93,
+              "prompt_eval_duration": 85995920,
+              "eval_count": 33,
+              "eval_duration": 601477662
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 1.109287,
+              "output": "{\n\"cores\": 8,\n\"threads\": 16,\n\"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1108189850,
+              "load_duration": 268778850,
+              "prompt_eval_count": 106,
+              "prompt_eval_duration": 90810586,
+              "eval_count": 31,
+              "eval_duration": 551096871
+            }
+          ],
+          "samples": [
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 47.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 9139671040,
+              "vram_used_bytes": 1999020032,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 72.0
+              },
+              "ram_available_bytes": 7626047488,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 31
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7544156160,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 21
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7542792192,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 49.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7568220160,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 33
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7574155264,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 4
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7629221888,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 17
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7633227776,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7753838592,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 23
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 75.0
+              },
+              "ram_available_bytes": 7759372288,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 5
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7759470592,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 31
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7768113152,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7911116800,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 22
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7915286528,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 8002916352,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 26
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 7975575552,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 8003244032,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 22
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 8009867264,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 46.0,
+                "junction": 48.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 8043368448,
+              "vram_used_bytes": 8152657920,
+              "gpu_busy_percent": 25
+            }
+          ],
+          "manifest_digest": "be3d9014bb1274550c327e509246d450f7910e376409fbc08b5e2679a8010b8f",
+          "artifact_size_bytes": 5335292377,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "7.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "thinking_disabled": true,
+          "warmup_s": 7.037552,
+          "resident_size_bytes": 6304899968,
+          "resident_vram_bytes": 6304899968,
+          "correct": 6,
+          "median_latency_s": 1.138469,
+          "median_decode_tps": 56.45521010173398
+        },
+        {
+          "name": "Qwen3 14B Q4_K_M",
+          "status": "blocked",
+          "runs": [],
+          "samples": [],
+          "reason": "Runtime limit or concurrent model"
+        }
+      ],
+      "runner_sha256": "a916302e02207def03e1b46d3756d3c7febd70d0baaec364c975949139dfe365",
+      "limitations": [
+        "Short JSON tasks; not general quality or 4K input acceptance.",
+        "Thinking disabled when supported; warm prompt cache not disabled.",
+        "Resource samples before/after calls, not continuous thermal protection.",
+        "Existing local tags, upstream provenance not independently verified."
+      ],
+      "cleanup_empty": false
+    },
+    {
+      "schema": "installed-model-fit.v1",
+      "machine_alias": "RDNA4-16",
+      "runtime": {
+        "version": "0.20.0"
+      },
+      "options": {
+        "num_ctx": 4096,
+        "num_predict": 128,
+        "temperature": 0,
+        "seed": 42
+      },
+      "cases": [
+        {
+          "id": "hardware-extraction",
+          "task": "Convert measured hardware facts into JSON",
+          "prompt": "Extract only these measured facts: CPU AMD Ryzen 7 5800X, 8 cores, 16 threads. Installed RAM 16 GB. GPU VRAM 16 GB. Return exactly JSON keys cores, threads, ram_gb, vram_gb with numeric values. No explanation.",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ram_gb": 16,
+            "vram_gb": 16
+          }
+        },
+        {
+          "id": "storage-aggregation",
+          "task": "Aggregate actual installed storage capacities",
+          "prompt": "Installed disks: Samsung SSD 990 PRO 2TB, capacity 2000398934016 bytes; Samsung SSD 860 EVO 1TB, capacity 1000204886016 bytes. Ignore virtual RAM disks. Return JSON with disk_count and total_bytes. Calculate the exact total; no explanation.",
+          "expected": {
+            "disk_count": 2,
+            "total_bytes": 3000603820032
+          }
+        },
+        {
+          "id": "finnish-hardware-extraction",
+          "task": "Extract actual hardware facts from Finnish text",
+          "prompt": "Poimi tiedot JSON-muodossa. Koneessa on Ryzen 7 5800X: 8 ydintä ja 16 säiettä. Emolevy on ASUS TUF GAMING B550-PLUS. Verkkokortti on Realtek RTL8125, 2.5 GbE. Vastaa vain avaimilla cores, threads, ethernet_gbps; arvot numeroina.",
+          "expected": {
+            "cores": 8,
+            "threads": 16,
+            "ethernet_gbps": 2.5
+          }
+        }
+      ],
+      "repeats_per_case": 3,
+      "profiles": [
+        {
+          "name": "Qwen3 14B Q4_K_M",
+          "status": "completed",
+          "runs": [
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 1.09628,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1095433224,
+              "load_duration": 112186721,
+              "prompt_eval_count": 79,
+              "prompt_eval_duration": 113994542,
+              "eval_count": 37,
+              "eval_duration": 774536004
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 1,
+              "elapsed_s": 1.028521,
+              "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1027648244,
+              "load_duration": 103774226,
+              "prompt_eval_count": 98,
+              "prompt_eval_duration": 127139522,
+              "eval_count": 31,
+              "eval_duration": 669111751
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 1.010376,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1009397840,
+              "load_duration": 103244048,
+              "prompt_eval_count": 115,
+              "prompt_eval_duration": 139811381,
+              "eval_count": 30,
+              "eval_duration": 645693444
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 1.103419,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1102459202,
+              "load_duration": 102983087,
+              "prompt_eval_count": 79,
+              "prompt_eval_duration": 114232910,
+              "eval_count": 37,
+              "eval_duration": 789929272
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 2,
+              "elapsed_s": 1.055651,
+              "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1054751592,
+              "load_duration": 105041450,
+              "prompt_eval_count": 98,
+              "prompt_eval_duration": 126645923,
+              "eval_count": 31,
+              "eval_duration": 702142223
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 1.173606,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1172535954,
+              "load_duration": 104943455,
+              "prompt_eval_count": 115,
+              "prompt_eval_duration": 173430477,
+              "eval_count": 30,
+              "eval_duration": 778426199
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 1.131856,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ram_gb\": 16,\n  \"vram_gb\": 16\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1130857286,
+              "load_duration": 103749479,
+              "prompt_eval_count": 79,
+              "prompt_eval_duration": 113873355,
+              "eval_count": 37,
+              "eval_duration": 824209392
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 3,
+              "elapsed_s": 1.031762,
+              "output": "{\n  \"disk_count\": 2,\n  \"total_bytes\": 3000603820032\n}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1030924818,
+              "load_duration": 108950874,
+              "prompt_eval_count": 98,
+              "prompt_eval_duration": 126704924,
+              "eval_count": 31,
+              "eval_duration": 690211230
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 1.108732,
+              "output": "{\n  \"cores\": 8,\n  \"threads\": 16,\n  \"ethernet_gbps\": 2.5\n}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 1107707244,
+              "load_duration": 101780764,
+              "prompt_eval_count": 115,
+              "prompt_eval_duration": 247475844,
+              "eval_count": 30,
+              "eval_duration": 640613052
+            }
+          ],
+          "samples": [
+            {
+              "temperatures_c": {
+                "edge": 50.0,
+                "junction": 50.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 9776513024,
+              "vram_used_bytes": 1999020032,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 50.0,
+                "junction": 51.0,
+                "mem": 74.0
+              },
+              "ram_available_bytes": 9597079552,
+              "vram_used_bytes": 12082491392,
+              "gpu_busy_percent": 52
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 57.0,
+                "mem": 77.0
+              },
+              "ram_available_bytes": 9531019264,
+              "vram_used_bytes": 12082499584,
+              "gpu_busy_percent": 58
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 61.0,
+                "mem": 78.0
+              },
+              "ram_available_bytes": 9530097664,
+              "vram_used_bytes": 12082499584,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 55.0,
+                "mem": 77.0
+              },
+              "ram_available_bytes": 9497833472,
+              "vram_used_bytes": 12082499584,
+              "gpu_busy_percent": 61
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 57.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9497870336,
+              "vram_used_bytes": 12082499584,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 56.0,
+                "mem": 78.0
+              },
+              "ram_available_bytes": 9467813888,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 58
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 57.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9467039744,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 56.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 9442750464,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 56
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 63.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9439911936,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 4
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 57.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9369456640,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 71
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 58.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9369489408,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 3
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 55.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 9285378048,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 57
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 59.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9284603904,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 4
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 61.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9255133184,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 61
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 62.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9255391232,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 4
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 56.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 9245614080,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 54
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 58.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 9247862784,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 4
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 55.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 9234939904,
+              "vram_used_bytes": 12082503680,
+              "gpu_busy_percent": 54
+            }
+          ],
+          "manifest_digest": "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8",
+          "artifact_size_bytes": 9276198565,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen3",
+            "families": [
+              "qwen3"
+            ],
+            "parameter_size": "14.8B",
+            "quantization_level": "Q4_K_M"
+          },
+          "thinking_disabled": true,
+          "warmup_s": 4.832245,
+          "resident_size_bytes": 10121968256,
+          "resident_vram_bytes": 10121968256,
+          "correct": 9,
+          "median_latency_s": 1.09628,
+          "median_decode_tps": 46.330078576067336,
+          "unload_was_pending": true
+        },
+        {
+          "name": "Qwen3.8 27B local IQ3 tag",
+          "status": "completed",
+          "runs": [
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 3.470682,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 3469679257,
+              "load_duration": 188271426,
+              "prompt_eval_count": 63,
+              "prompt_eval_duration": 753054825,
+              "eval_count": 31,
+              "eval_duration": 2269159658
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 1,
+              "elapsed_s": 2.854999,
+              "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2854133891,
+              "load_duration": 164478295,
+              "prompt_eval_count": 82,
+              "prompt_eval_duration": 792232017,
+              "eval_count": 27,
+              "eval_duration": 1685994159
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 1,
+              "elapsed_s": 2.695332,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2694274186,
+              "load_duration": 169049074,
+              "prompt_eval_count": 97,
+              "prompt_eval_duration": 1163424132,
+              "eval_count": 25,
+              "eval_duration": 1114595516
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 2.482162,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2481241628,
+              "load_duration": 172704491,
+              "prompt_eval_count": 63,
+              "prompt_eval_duration": 429119842,
+              "eval_count": 31,
+              "eval_duration": 1627194521
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 2,
+              "elapsed_s": 2.789379,
+              "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2788485061,
+              "load_duration": 164059828,
+              "prompt_eval_count": 82,
+              "prompt_eval_duration": 719944446,
+              "eval_count": 27,
+              "eval_duration": 1709928276
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 2,
+              "elapsed_s": 2.545388,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2544337467,
+              "load_duration": 167461196,
+              "prompt_eval_count": 97,
+              "prompt_eval_duration": 859156028,
+              "eval_count": 25,
+              "eval_duration": 1315400038
+            },
+            {
+              "case_id": "hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 2.268632,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ram_gb\": 16, \"vram_gb\": 16}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ram_gb": 16,
+                "vram_gb": 16
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2267623579,
+              "load_duration": 168756313,
+              "prompt_eval_count": 63,
+              "prompt_eval_duration": 492650309,
+              "eval_count": 31,
+              "eval_duration": 1401883216
+            },
+            {
+              "case_id": "storage-aggregation",
+              "repeat": 3,
+              "elapsed_s": 2.571203,
+              "output": "{\"disk_count\": 2, \"total_bytes\": 3000603820032}",
+              "expected": {
+                "disk_count": 2,
+                "total_bytes": 3000603820032
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2570330477,
+              "load_duration": 169124666,
+              "prompt_eval_count": 82,
+              "prompt_eval_duration": 618288516,
+              "eval_count": 27,
+              "eval_duration": 1567858419
+            },
+            {
+              "case_id": "finnish-hardware-extraction",
+              "repeat": 3,
+              "elapsed_s": 2.586409,
+              "output": "{\"cores\": 8, \"threads\": 16, \"ethernet_gbps\": 2.5}",
+              "expected": {
+                "cores": 8,
+                "threads": 16,
+                "ethernet_gbps": 2.5
+              },
+              "done_reason": "stop",
+              "passed": true,
+              "total_duration": 2585227242,
+              "load_duration": 161233301,
+              "prompt_eval_count": 97,
+              "prompt_eval_duration": 1045580299,
+              "eval_count": 25,
+              "eval_duration": 1171458359
+            }
+          ],
+          "samples": [
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 53.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 10684301312,
+              "vram_used_bytes": 2811146240,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 50.0,
+                "junction": 52.0,
+                "mem": 76.0
+              },
+              "ram_available_bytes": 8679682048,
+              "vram_used_bytes": 17004773376,
+              "gpu_busy_percent": 89
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 63.0,
+                "mem": 77.0
+              },
+              "ram_available_bytes": 8429395968,
+              "vram_used_bytes": 17010728960,
+              "gpu_busy_percent": 80
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 61.0,
+                "mem": 78.0
+              },
+              "ram_available_bytes": 8428244992,
+              "vram_used_bytes": 17010728960,
+              "gpu_busy_percent": 99
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 74.0,
+                "mem": 78.0
+              },
+              "ram_available_bytes": 8422494208,
+              "vram_used_bytes": 17010741248,
+              "gpu_busy_percent": 93
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 60.0,
+                "mem": 78.0
+              },
+              "ram_available_bytes": 8421994496,
+              "vram_used_bytes": 17010741248,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 73.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8308817920,
+              "vram_used_bytes": 17010749440,
+              "gpu_busy_percent": 98
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 59.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8307232768,
+              "vram_used_bytes": 17010749440,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 71.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8235999232,
+              "vram_used_bytes": 17010757632,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 58.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8247107584,
+              "vram_used_bytes": 17010757632,
+              "gpu_busy_percent": 49
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 60.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8171171840,
+              "vram_used_bytes": 17010765824,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 65.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8170950656,
+              "vram_used_bytes": 17010765824,
+              "gpu_busy_percent": 6
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 67.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8166359040,
+              "vram_used_bytes": 17010778112,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 66.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8170864640,
+              "vram_used_bytes": 17010778112,
+              "gpu_busy_percent": 14
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 71.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8156372992,
+              "vram_used_bytes": 17010786304,
+              "gpu_busy_percent": 100
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 59.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8157544448,
+              "vram_used_bytes": 17010786304,
+              "gpu_busy_percent": 87
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 66.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 8113393664,
+              "vram_used_bytes": 17010798592,
+              "gpu_busy_percent": 88
+            },
+            {
+              "temperatures_c": {
+                "edge": 52.0,
+                "junction": 59.0,
+                "mem": 80.0
+              },
+              "ram_available_bytes": 8111210496,
+              "vram_used_bytes": 17010798592,
+              "gpu_busy_percent": 96
+            },
+            {
+              "temperatures_c": {
+                "edge": 51.0,
+                "junction": 63.0,
+                "mem": 79.0
+              },
+              "ram_available_bytes": 8160002048,
+              "vram_used_bytes": 17010814976,
+              "gpu_busy_percent": 65
+            }
+          ],
+          "manifest_digest": "88984afc28a325787dd9e42a97f06a23764a415b6335cad99277a71a77bc5a58",
+          "artifact_size_bytes": 10094358011,
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen35",
+            "families": [
+              "qwen35"
+            ],
+            "parameter_size": "26.9B",
+            "quantization_level": "unknown"
+          },
+          "thinking_disabled": false,
+          "warmup_s": 5.977476,
+          "resident_size_bytes": 14660927488,
+          "resident_vram_bytes": 14660927488,
+          "correct": 9,
+          "median_latency_s": 2.586409,
+          "median_decode_tps": 19.00562511615193,
+          "unload_was_pending": true
+        }
+      ],
+      "runner_sha256": "6c6657723fb5c12dddd30f1ac2e668a74d6bbcf019fcbb21a11c7bbce61932ce",
+      "limitations": [
+        "Short JSON tasks; not general quality or 4K input acceptance.",
+        "Thinking disabled when supported; warm prompt cache not disabled.",
+        "Resource samples before/after calls, not continuous thermal protection.",
+        "Existing local tags, upstream provenance not independently verified."
+      ],
+      "cleanup_empty": true
+    }
+  ],
+  "case_count": 3,
+  "repeats": 3,
+  "context_setting": 4096,
+  "notes": [
+    "Two actual sessions; an initial unload timing block retained, not counted as a scored run.",
+    "Thinking disabled when supported; short inputs, warm cache, no general accuracy.",
+    "The 27B local tag advertises IQ3 but runtime quantization metadata is unknown.",
+    "All selected profiles observed fully GPU-resident at warmup; not sustained full-context acceptance."
+  ]
+}

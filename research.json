@@ -1,0 +1,141 @@
+{
+  "schema": "decision-model-availability.v1",
+  "checked_at": "2026-10-03T21:16:19.946309+00:00",
+  "models": [
+    {
+      "name": "Clef Flash",
+      "parameters_b": 9,
+      "repo": "Cloudflare/clef-flash",
+      "revision": "17f0b0ad64efb65d273590632833508766b2aae6",
+      "license": "Apache-2.0",
+      "gated": false,
+      "status": "blocked",
+      "safetensors_bytes": 19063259136,
+      "gguf_files": 0,
+      "reason": "Official BF16 weights exceed 16 GB VRAM. Dedicated joint schema head requires a separately validated quantized local runtime; ordinary Ollama text generation is not a Clef decision test.",
+      "local_measurements": null,
+      "metadata_url": "https://huggingface.co/api/models/Cloudflare/clef-flash/revision/17f0b0ad64efb65d273590632833508766b2aae6?blobs=true",
+      "model_card_url": "https://huggingface.co/Cloudflare/clef-flash/resolve/17f0b0ad64efb65d273590632833508766b2aae6/README.md",
+      "license_url": "https://huggingface.co/Cloudflare/clef-flash/resolve/17f0b0ad64efb65d273590632833508766b2aae6/LICENSE",
+      "files": [
+        {
+          "name": "joint_head.safetensors",
+          "bytes": 243538016,
+          "sha256": "19cdcec8c81dc9212be320fff47462ab342fbc1278be4368fb3da71241cf5ba0"
+        },
+        {
+          "name": "model-00001-of-00004.safetensors",
+          "bytes": 4942706120,
+          "sha256": "8b45a8e968141cdcc58fb71c9adfc258e2c77b5f062bc636c1fd5bc5d916b565"
+        },
+        {
+          "name": "model-00002-of-00004.safetensors",
+          "bytes": 4987757928,
+          "sha256": "7590856c713eed844a2dcf48e6c43c4de165b788bc3f80e328311183cdbc7db8"
+        },
+        {
+          "name": "model-00003-of-00004.safetensors",
+          "bytes": 4954810240,
+          "sha256": "e6eac2467952c33361ed7dcb3c7959d1086bbe57201cd3749c3d769fdc17fe63"
+        },
+        {
+          "name": "model-00004-of-00004.safetensors",
+          "bytes": 3934446832,
+          "sha256": "9fcecc6556b39171238373a465f409794b7f821fb4cd1e6459e3a9c0fe317af7"
+        }
+      ]
+    },
+    {
+      "name": "Clef",
+      "parameters_b": 27,
+      "repo": "Cloudflare/clef",
+      "revision": "2f3de3dd85f379784083b0814d997ab627200f0c",
+      "license": "Apache-2.0",
+      "gated": false,
+      "status": "blocked",
+      "safetensors_bytes": 54969731792,
+      "gguf_files": 0,
+      "reason": "Official BF16 weights exceed 16 GB VRAM. Dedicated joint schema head requires a separately validated quantized local runtime; ordinary Ollama text generation is not a Clef decision test.",
+      "local_measurements": null,
+      "metadata_url": "https://huggingface.co/api/models/Cloudflare/clef/revision/2f3de3dd85f379784083b0814d997ab627200f0c?blobs=true",
+      "model_card_url": "https://huggingface.co/Cloudflare/clef/resolve/2f3de3dd85f379784083b0814d997ab627200f0c/README.md",
+      "license_url": "https://huggingface.co/Cloudflare/clef/resolve/2f3de3dd85f379784083b0814d997ab627200f0c/LICENSE",
+      "files": [
+        {
+          "name": "joint_head.safetensors",
+          "bytes": 256125024,
+          "sha256": "a010ac04f078e699988e4049cbea5e62c962393f59fec366640b64e8d69a4953"
+        },
+        {
+          "name": "model-00001-of-00012.safetensors",
+          "bytes": 2542796928,
+          "sha256": "54d83c1d36631de231876217a8e0c2483eccee8746369a482b79442bdfc5d958"
+        },
+        {
+          "name": "model-00002-of-00012.safetensors",
+          "bytes": 4842451920,
+          "sha256": "464086af08be8e2ec14960a4dcff083ebc39974ade00d79d35497385f960ab3a"
+        },
+        {
+          "name": "model-00003-of-00012.safetensors",
+          "bytes": 4965227944,
+          "sha256": "092212d3a02fafacd6424723eda59d60e5282d2068d68f0e37cb891f63bbb658"
+        },
+        {
+          "name": "model-00004-of-00012.safetensors",
+          "bytes": 4912819264,
+          "sha256": "d06ff197668c782145fafa74bba61bbc296fb27e39afb15fd522918ce3514dc5"
+        },
+        {
+          "name": "model-00005-of-00012.safetensors",
+          "bytes": 4986198544,
+          "sha256": "cc693b8829614a72e0c2be303fb290cf05dbb4d7ded872a817b97bb222a78427"
+        },
+        {
+          "name": "model-00006-of-00012.safetensors",
+          "bytes": 4912819320,
+          "sha256": "e7cce15da2443cb8b84aaed66a9a71f0c87dc9d043f83b5f58f4a89f64ba60ad"
+        },
+        {
+          "name": "model-00007-of-00012.safetensors",
+          "bytes": 4932703272,
+          "sha256": "75fc7e76b57d5d17a5d85fff3e879d07dd33edc885a8ee04ad437a899bcd5307"
+        },
+        {
+          "name": "model-00008-of-00012.safetensors",
+          "bytes": 4966314576,
+          "sha256": "189b15cb6b1af48d5f118951446e15639bfeaf76081d5f20aed1f1b4253afe1d"
+        },
+        {
+          "name": "model-00009-of-00012.safetensors",
+          "bytes": 4964162248,
+          "sha256": "8101e2664bb14684fc7051f2e1f84903dbdf5489b17cae3212ac08a0af744a60"
+        },
+        {
+          "name": "model-00010-of-00012.safetensors",
+          "bytes": 4933789824,
+          "sha256": "a8e69016a1a8dab1c9ce8dd151c0d3224412ab864cf06d3a5e2b8a5775cfdfb8"
+        },
+        {
+          "name": "model-00011-of-00012.safetensors",
+          "bytes": 4965228032,
+          "sha256": "b328d21c36ab384696e40a30ac86a95aaf6dd82da89438ba009cb97d87c1d6b9"
+        },
+        {
+          "name": "model-00012-of-00012.safetensors",
+          "bytes": 2789094896,
+          "sha256": "7505eed910a84ea18e66953572476f8a8a6a6ef54192a6643d6e9cd21a3bb978"
+        }
+      ]
+    }
+  ],
+  "docs_revision": "e43015cd6cddad3ee1c0fa087c4d5022e65e7c98",
+  "runtime_probe": {
+    "scope": "system Python on test computer",
+    "torch": false,
+    "transformers": false,
+    "bitsandbytes": false,
+    "torchao": false
+  },
+  "boundary": "Source/fit feasibility only. No Clef weights downloaded, custom model code executed, or paid API request made."
+}
