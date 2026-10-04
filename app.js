@@ -225,7 +225,7 @@ function renderResearch(data) {
 }
 function validateCatalog(data) {
   if (data.schema !== 'upstream-model-catalog.v1' || !revisionPattern.test(data.source_revision) ||
-      !Array.isArray(data.entries) || !data.entries.length) throw new Error('Invalid catalog');
+      !Array.isArray(data.entries) || data.entries.length !== 69) throw new Error('Invalid catalog');
   const names = new Set();
   for (const entry of data.entries) {
     if (!/^[A-Za-z0-9_.-]+$/.test(entry.slug) || names.has(entry.slug) ||
@@ -240,11 +240,16 @@ function renderCatalog(data) {
     const link = element('a', entry.slug);
     link.href = `https://developers.cloudflare.com/workers-ai/models/${entry.slug}/`;
     link.rel = 'noreferrer';
-    item.append(link, element('span', ' · ei paikallisesti testattu'));
+    const label = entry.slug === 'qwen3.8-27b'
+      ? ' · samanniminen paikallinen 27B mitattu; Cloudflare-version vastaavuutta ei ole todennettu'
+      : ['clef', 'clef-flash'].includes(entry.slug)
+        ? ' · painosaatavuus selvitetty; ei paikallista inferenssiä'
+        : ' · ei paikallisesti testattu tämän mallikortin versiona';
+    item.append(link, element('span', label));
     byId('catalog-list').append(item);
   }
-  byId('catalog-title').textContent = `Näytä Cloudflaren malliluettelo · ${data.entries.length} mallikorttia`;
-  byId('catalog-status').textContent = `Tilannekuva tarkistettu ${checkedTime(data.checked_at)}`;
+  byId('catalog-title').textContent = `Näytä ${data.entries.length} Cloudflare-mallikorttia · ei mittaustuloksia`;
+  byId('catalog-status').textContent = `Lähdeluettelo: ${data.entries.length} korttia, ei ${data.entries.length} paikallista testiä · lähteet tarkistettu ${checkedTime(data.checked_at)}`;
 }
 async function loadExtra(file, validator, renderer, statusId, contentId) {
   try {
@@ -261,7 +266,7 @@ async function loadExtra(file, validator, renderer, statusId, contentId) {
 }
 const fitReceipt = loadExtra('fits.json', validateFits, renderFits, 'fit-status', 'fit-content');
 loadExtra('research.json', validateResearch, renderResearch, 'research-status', 'research-content');
-loadExtra('catalog.json', validateCatalog, renderCatalog, 'catalog-status');
+loadExtra('catalog.json', validateCatalog, renderCatalog, 'catalog-status', 'catalog');
 
 // Rankings use verified measured rows, never model names or catalog marketing.
 function measuredModels(original, fits) {

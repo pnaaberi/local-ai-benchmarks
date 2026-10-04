@@ -77,9 +77,14 @@
   </div>
   <ul class="downloads">
     <li><a href="research.json" download>Clef-selvitys · JSON</a><span>Revisiot, tiedostokoot, hashit ja eston syy</span></li>
-    <li><a href="catalog.json" download>Koko Cloudflare-malliluettelo · JSON</a><span>Virallisen dokumentaation pinnattu tilannekuva</span></li>
+    <li><a href="catalog.json" download>Cloudflaren 69 mallikorttia · JSON</a><span>Lähdeluettelo, ei mittaustuloksia</span></li>
   </ul>
-  <details id="catalog"><summary id="catalog-title">Näytä Cloudflaren malliluettelo</summary><p>Luettelo sisältää myös kuva-, ääni- ja embedding-malleja. Luettelossa olo ei todista ladattavia painoja, paikallista sopivuutta tai tämänhetkistä pilvipalvelun saatavuutta. Näitä muita malleja ei ole paikallisesti testattu tässä kokeessa.</p><p id="catalog-status" class="meta" role="status"></p><ul id="catalog-list"></ul></details>
+  <h3>Cloudflaren 69 mallikorttia eivät ole 69 mallin testi.</h3>
+  <p class="notice"><strong>Vain 4 mallia mitattiin.</strong> Ne olivat jo asennettuina tällä koneella. Katso <a href="#model-results">tulokset</a>. Alla on Cloudflaren lähteitä, ei 69 testiajoa.</p>
+  <p>Miksi muita ei ajettu? Luettelo sisältää myös kuva-, ääni- ja embedding-tehtäviä. Mallikortti ei yksin todista paikallisten painojen saatavuutta, 16 GB:n GPU:lle sopimista tai yhteensopivaa ajotapaa; nämä ja tehtäväkohtaiset mittaukset pitäisi selvittää erikseen. Kahden Clef-mallin painosaatavuus selvitettiin yllä, mutta inferenssiä ei ajettu. Samannimisen paikallisen 27B-mallin vastaavuutta Cloudflaren korttiin ei ole todennettu.</p>
+  <p id="catalog-status" class="meta" role="status">Luettelo latautuu. <a href="catalog.json" download>JSON on ladattavissa</a>.</p>
+  <details id="catalog" hidden><summary id="catalog-title">Näytä lähdeluettelo</summary><p>Nämä linkit ovat lähteitä, eivät paikallisia nopeus- tai laatupisteitä. Luettelossa olo ei myöskään vahvista pilvipalvelun tämänhetkistä saatavuutta.</p><ul id="catalog-list"></ul></details>
+  <noscript><p>Luettelon selaus tarvitsee JavaScriptin. Lataa <a href="catalog.json" download>lähteiden JSON</a>.</p></noscript>
 </section>
 <section id="results"><div class="section-heading"><div><p class="eyebrow">Ensimmäinen koe / 3. lokakuuta</p><h2>Qwen2.5-Coder 14B · Q4_K_M</h2></div><a class="action" href="results.json" download> Lataa mittauskuitit ↓</a></div>
 <div id="load-status" role="status">Tulokset ja asetukset löytyvät myös ladattavista mittauskuiteista.</div>
