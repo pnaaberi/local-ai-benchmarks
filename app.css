@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: var(--weight-regular) var(--text-body)/var(--leading) var(--font-ui); overflow-wrap: anywhere; }
-.page { max-width: var(--content-max); margin: auto; padding: 0 var(--page-gutter) var(--space-3xl); }
+.page { zoom: var(--page-scale); font-size: var(--text-body-before-scale); max-width: var(--content-max); margin: auto; padding: 0 var(--page-gutter) var(--space-3xl); }
 a { color: var(--teal); text-underline-offset: var(--space-xs); }
 a:hover { color: var(--teal-hover); }
 :focus-visible { outline: var(--focus-width) solid var(--teal); outline-offset: var(--focus-offset); }

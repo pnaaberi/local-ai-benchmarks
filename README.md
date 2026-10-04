@@ -2,6 +2,8 @@
 
 A static, read-only research notebook for actual local inference on a Radeon RX 9070 XT workstation. Finnish interface; no third-party assets, analytics, account system, model API or remote execution controls. The machine name is a public alias.
 
+The page defaults to an 80% visual scale on its content shell. Reading text is compensated to remain at least 16 CSS px (secondary labels at least 14 px) and primary controls at least 44 px in the tested browser; spacing, larger headings, statistics and tables become denser. This does not set or lock the user's browser zoom. Responsive 320 px and enlarged-text layouts remain supported; other browsers/assistive technologies require their own verification.
+
 ## Current evidence
 
 Result-first tables: best measured model per category, all four measured profiles in one correctness/latency-ordered table, and a per-task correctness matrix. Qwen3 14B is the practical pick for this corpus (9/9 and lowest median latency among perfect scores); Gemma leads decode speed and smallest GPU residency but fails arithmetic. Correctness ties remain explicit; code/agent/chat/RAG/image/audio/decision categories without real tests have no winner. Rankings require both measurement datasets to validate; unavailable data hides the combined ranking rather than naming a partial winner. Prior-day Qwen2.5 data is not a controlled same-session A/B.

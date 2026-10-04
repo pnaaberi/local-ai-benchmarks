@@ -15,9 +15,11 @@
   --warning-soft: #faf1df;
   --font-ui: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: ui-monospace, "Cascadia Code", monospace;
-  --text-small: .875rem;
+  --page-scale: .8;
+  --text-body-before-scale: 1.25rem;
+  --text-small: 1.125rem;
   --text-body: 1rem;
-  --text-lead: 1.125rem;
+  --text-lead: 1.40625rem;
   --text-section: 1.625rem;
   --text-title: clamp(2rem, 4vw, 3.25rem);
   --text-stat: 2rem;
@@ -36,10 +38,10 @@
   --space-2xl: 2rem;
   --space-3xl: 3rem;
   --space-section: 3.5rem;
-  --content-max: 76rem;
+  --content-max: 95rem;
   --reading-max: 68ch;
   --page-gutter: 2rem;
-  --control-min: 2.75rem;
+  --control-min: 3.4375rem;
   --control-radius: .25rem;
   --border: 1px solid var(--line);
   --control-border: 1px solid var(--control-line);
