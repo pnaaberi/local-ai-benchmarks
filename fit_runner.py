@@ -91,7 +91,7 @@ def main():
         tags = {model['name']:model for model in api('/api/tags')['models']}
         result = {'schema':'installed-model-fit.v1','machine_alias':'RDNA4-16',
                   'runtime':api('/api/version'),'options':OPTIONS,'cases':module.CASES,
-                  'repeats_per_case':3,'profiles':[],
+                  'repeats_per_case':3,'requested_candidates':len(candidates),'profiles':[],
                   'runner_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                   'limitations':['Short JSON tasks; not general quality or 4K input acceptance.',
                                  'Thinking disabled when supported; warm prompt cache not disabled.',
@@ -173,9 +173,16 @@ def main():
                 (args.output/'fits.json').write_text(json.dumps(result,indent=2)+'\n')
             if abort:
                 break
+        for display,_tag in candidates[len(result['profiles']):]:
+            result['profiles'].append({'name':display,'status':'skipped','reason':'Run stopped before this candidate','runs':[],'samples':[]})
         result['cleanup_empty'] = not api('/api/ps')['models']
+        # Completed profiles stay as partial evidence; the run only succeeds when every
+        # requested candidate completed and every unload was confirmed.
+        complete = (result['cleanup_empty'] and all(profile['status']=='completed' and 'cleanup' not in profile
+                                                    for profile in result['profiles']))
+        result['run_status'] = 'complete' if complete else 'incomplete'
         (args.output/'fits.json').write_text(json.dumps(result,indent=2)+'\n')
-    return 0 if all(profile['status']=='completed' for profile in result['profiles']) else 2
+    return 0 if complete else 2
 
 
 if __name__ == '__main__':
